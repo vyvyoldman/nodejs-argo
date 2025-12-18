@@ -18,11 +18,11 @@ const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'sap/sg.wow83168.qzz.io';          // 固定隧道域名,留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || eyJhIjoiMDU5NDkzODljMmM3YTZkNGJiNjU5OTU2MThhN2FiYzAiLCJ0IjoiMjc1MzJmZjMtZmY2Ni00YTljLTg2NGUtMmEwYmQ4MjQ0Zjc5IiwicyI6Ik5EQmtZak5qWVdFdE9HUXlZUzAwWkRnM0xXSXlORGN0WTJRellXRTNObVkwWVRJeiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://fscarmen.cloudflare.now.cc
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMDU5NDkzODljMmM3YTZkNGJiNjU5OTU2MThhN2FiYzAiLCJ0IjoiMjc1MzJmZjMtZmY2Ni00YTljLTg2NGUtMmEwYmQ4MjQ0Zjc5IiwicyI6Ik5EQmtZak5qWVdFdE9HUXlZUzAwWkRnM0xXSXlORGN0WTJRellXRTNObVkwWVRJeiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://fscarmen.cloudflare.now.cc
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
 const CFIP = process.env.CFIP || '104.19.146.107 ';         // 节点优选域名或优选ip  
 const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
-const NAME = process.env.NAME || 'sbp/sg';                     //
+const NAME = process.env.NAME || 'sbp/us';                     //
 //创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
   fs.mkdirSync(FILE_PATH);
