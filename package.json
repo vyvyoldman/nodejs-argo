@@ -4,6 +4,7 @@
   "description": "nzws-js",
   "main": "index.js",
   "scripts": {
+    "build": "echo build skipped",
     "start": "node index.js"
   },
   "dependencies": {
